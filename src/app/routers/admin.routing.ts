@@ -11,4 +11,3 @@ export const AdminRoutes: Routes = [
 		path: "panel", redirectTo: "/panel", pathMatch: "full"
 	},
 ];
-

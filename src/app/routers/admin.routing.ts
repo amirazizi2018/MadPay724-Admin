@@ -2,10 +2,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 export const AdminRoutes: Routes = [
 	{
-		path: "", redirectTo: "/login", pathMatch: "full"
+		path: "", redirectTo: "/auth", pathMatch: "full"
 	},
 	{
-		path: "login", redirectTo: "/login", pathMatch: "full"
+		path: "auth", redirectTo: "/auth", pathMatch: "full"
 	},
 	{
 		path: "panel", redirectTo: "/panel", pathMatch: "full"

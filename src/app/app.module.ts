@@ -1,3 +1,4 @@
+import { AuthModule } from './auth/auth.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -5,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { PanelModule } from './panel/panel.module';
-import { LoginModule } from './login/login.module';
 import { AdminRoutes } from './routers/admin.routing';
 
 
@@ -15,8 +15,8 @@ import { AdminRoutes } from './routers/admin.routing';
 	],
 	imports: [
 		BrowserModule,
-		AppRoutingModule,
-		LoginModule,
+		AppRoutingModule,		
+		AuthModule,
 		PanelModule,
 		RouterModule.forRoot(AdminRoutes)
 	],

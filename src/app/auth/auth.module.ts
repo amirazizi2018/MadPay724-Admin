@@ -1,16 +1,17 @@
-import { LoginRoutes } from './routes/login.routing';
+import { AuthRoutes } from './routes/auth.routing';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './../app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { LoginComponent } from './login.component';
+
+import { AuthComponent } from './auth.component';
 
 @NgModule({
-	imports: [
-		BrowserModule,
+    imports: [
+        BrowserModule,
 		AppRoutingModule,
-		RouterModule.forRoot(LoginRoutes)
-	],
-	declarations: [LoginComponent]
+		RouterModule.forRoot(AuthRoutes)
+    ],
+    declarations: [AuthComponent]
 })
-export class LoginModule { }
+export class AuthModule { }
